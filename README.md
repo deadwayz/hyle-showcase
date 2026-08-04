@@ -6,15 +6,24 @@ Live: https://deadwayz.github.io/hyle-showcase/
 
 ![HYLE showcase preview](showcase.gif)
 
-What it shows
+HYLE was built to solve a common IT operations problem: scattered asset information, manual tracking, and limited visibility into equipment availability.
 
-An 8-scene, ~13-second looping walkthrough of the platform:
+The platform provides a centralized view of IT assets, allowing teams to track inventory, manage assignments, prepare equipment for new hires, access device information through mobile QR scanning, and generate professional operational reports.
 
-Logo intro — HYLE mark and wordmark
-Dashboard — fleet KPIs, asset-type breakdown, equipment readiness
-Asset lifecycle — Inventory → Preparation → Assigned → Monitoring → Reporting
-Recruitment readiness — kit-based onboarding checklist for a new hire
-Offboarding — exit tracking, asset returns, clearance status
-QR scan lookup — scanning a device tag to pull up its live record on a phone
-Morphē AI assistant — suggested actions, a typed query, and a generated report
-Hero close — full dashboard with floating capability labels
+### What it does
+  - Real-time asset visibility and inventory tracking
+  - Equipment readiness planning for new starters
+  - Asset assignment and lifecycle management
+  - Mobile QR code scanning for instant device identification and asset details
+  - Executive-ready report generation and export for asset tracking, assignments, and operational insights
+  - AI-powered natural language asset search
+
+### Built with
+
+  - Cloudflare Workers
+  - Cloudflare D1 Database
+  - JavaScript
+  - AI-powered workflows
+  - Automated reporting and document generation
+  - Mobile-friendly asset management capabilities
+
