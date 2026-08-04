@@ -1,6 +1,6 @@
 ### HYLE Product Showcase
 
-A looping, animated preview of HYLE — IT Asset & Operations Platform, built as a single self-contained HTML/CSS/JS page (no build step, no dependencies besides Google Fonts).
+A looping, animated preview of HYLE — IT Asset & Operations Platform
 
 Live: https://deadwayz.github.io/hyle-showcase/
 
