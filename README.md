@@ -19,7 +19,6 @@ The platform provides a centralized view of IT assets, allowing teams to track i
   - AI-powered natural language asset search
 
 ## Built with
-
   - Cloudflare Workers
   - Cloudflare D1 Database
   - JavaScript
