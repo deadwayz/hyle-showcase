@@ -1,4 +1,4 @@
-HYLE Product Showcase
+### HYLE Product Showcase
 
 A looping, animated preview of HYLE — IT Asset & Operations Platform, built as a single self-contained HTML/CSS/JS page (no build step, no dependencies besides Google Fonts).
 
@@ -10,7 +10,7 @@ HYLE was built to solve a common IT operations problem: scattered asset informat
 
 The platform provides a centralized view of IT assets, allowing teams to track inventory, manage assignments, prepare equipment for new hires, access device information through mobile QR scanning, and generate professional operational reports.
 
-### What it does
+## What it does
   - Real-time asset visibility and inventory tracking
   - Equipment readiness planning for new starters
   - Asset assignment and lifecycle management
@@ -18,7 +18,7 @@ The platform provides a centralized view of IT assets, allowing teams to track i
   - Executive-ready report generation and export for asset tracking, assignments, and operational insights
   - AI-powered natural language asset search
 
-### Built with
+## Built with
 
   - Cloudflare Workers
   - Cloudflare D1 Database
