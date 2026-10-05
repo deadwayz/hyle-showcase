@@ -1,49 +1,63 @@
-### HYLE Product Showcase
+# HYLE
 
-A looping, animated preview of HYLE — IT Asset & Operations Platform
+**A clearer view of every IT asset.**
 
-Live: https://deadwayz.github.io/hyle-showcase/
+HYLE brings inventory, equipment assignments, lifecycle planning, and reporting into one internal workspace. It helps an IT team answer practical questions: what is available, who has it, what needs attention, and what is needed next?
 
-![HYLE showcase preview](showcase.gif)
+![HYLE — IT asset management](assets/cover.svg)
 
-HYLE was built to solve a common IT operations problem: scattered asset information, manual tracking, and limited visibility into equipment availability.
+[Watch the product tour](https://deadwayz.github.io/hyle-showcase/) · [Explore the preview](#preview) · [Engineering notes](#engineering-notes)
 
-The platform provides a centralized view of IT assets, allowing teams to track inventory, manage assignments, prepare equipment for new hires, access device information through mobile QR scanning, and generate professional operational reports.
+## Why it exists
 
-## What it does
+Asset information becomes harder to trust when inventory, assignment history, employee exits, and procurement planning live in separate records. HYLE connects those workflows so day-to-day decisions can start from the same operational picture.
 
-* Real-time asset visibility and inventory tracking
-* Standalone executive asset status overview for quickly understanding organization-wide availability and identifying assets requiring attention
-* Equipment readiness planning for new starters
-* Asset assignment and lifecycle management
-* Mobile QR code scanning for instant device identification and asset details
-* Executive-ready report generation and export for asset tracking, assignments, and operational insights
-* AI-powered natural language asset search
+## Preview
 
-## Built with
+![Animated HYLE tour showing inventory, planning, and reporting workflows](showcase.gif)
 
-* Cloudflare Workers
-* Cloudflare D1 Database
-* JavaScript
-* AI-powered workflows
-* Automated reporting and document generation
-* Mobile-friendly asset management capabilities
+The public tour uses illustrative records and represents an earlier interface revision. It is a presentation of the product, not a connection to an organization's live inventory. The application source and operational environment remain private.
 
-## Standalone Status Overview
+<details>
+<summary><strong>View the standalone asset-status presentation</strong></summary>
 
-HYLE also includes a dedicated standalone status experience designed for executives and non-technical staff.
+![HYLE asset-status presentation showing fleet availability and maintenance indicators](showcase2.gif)
 
-![HYLE showcase preview](showcase2.gif)
+The separate status experience emphasizes equipment availability and exceptions for readers who do not need the full management interface.
 
-The Status Overview provides a simplified, organization-wide view of the current IT asset fleet, focusing on availability, deployment, maintenance, and assets requiring attention. It is designed to communicate operational status at a glance without requiring users to navigate the full asset management platform.
+</details>
 
-The standalone view includes:
+## What the application does
 
-* Live total asset overview
-* Available vs. deployed equipment visibility
-* Maintenance and poor/failed asset indicators
-* Searchable and sortable equipment availability
-* Automatic data refresh
-* Executive-focused presentation with minimal technical terminology
+| Workflow | Purpose |
+| --- | --- |
+| Inventory and assignments | Track devices, ownership, location, condition, and lifecycle status |
+| Equipment readiness | Compare upcoming needs with available equipment |
+| Employee exits | Record returned equipment and final verification |
+| Operational reporting | Produce inventory, assignment, and planning reports, including Excel export |
+| Asset identification | Use QR-based identification and a separate device-status view |
+| Staff administration | Manage accounts and administrative roles with attributable activity |
+| Recovery snapshots | Retain manual and automatic snapshots for operational recovery |
 
+## Engineering notes
 
+- **One application boundary.** A Cloudflare Worker serves the browser interface and API, with Cloudflare D1 holding structured records.
+- **Simple frontend, focused backend.** HTML, CSS, and JavaScript deliver the interface; server-side APIs handle persistence, authentication, and exports.
+- **A distinct status view.** The operational workspace and simplified asset overview serve different information needs.
+- **Search that matches the domain.** Natural-language-style asset queries and supported report commands are handled by application logic. They are not presented here as a general-purpose generative AI service.
+
+**Application stack:** JavaScript · HTML/CSS · Cloudflare Workers · Cloudflare D1 · SheetJS
+
+**Showcase stack:** Static HTML/CSS/JavaScript · animated GIFs · GitHub Pages
+
+## Project scope
+
+HYLE is an internal operations application. This repository contains its public product presentation, not an installable release or production database. The tour's sample totals are illustrative, not published organizational metrics.
+
+## More projects
+
+[Duer — responsibilities and recurring work](https://github.com/deadwayz/duer-showcase) · [LYNX — network monitoring](https://github.com/deadwayz/lynx-monitoring-showcase) · [Creator's GitHub profile](https://github.com/deadwayz)
+
+## Usage and permissions
+
+See [NOTICE.md](NOTICE.md) for showcase usage and third-party rights. Public visibility does not grant an open-source license for the application.
